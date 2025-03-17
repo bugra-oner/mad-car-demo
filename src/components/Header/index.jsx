@@ -1,7 +1,5 @@
 import reactLogo from "../Header/test.svg";
 
-
-
 export default function Header() {
   return (
     <div>
