@@ -1,7 +1,7 @@
 /* 📌 HEADER GENEL STİL */
 .header {
-    background: linear-gradient(90deg, rgb(20, 20, 20) 0%, rgb(90, 10, 120) 100%);
-    padding: 15px 0;
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(100, 32, 122) 100%);
+    /* padding: px 0; */
     position: fixed;
     width: 100%;
     top: 0;
