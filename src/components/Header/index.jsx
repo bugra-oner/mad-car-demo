@@ -34,11 +34,11 @@ export default function Header() {
               Services
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="/contact" onClick={() => setIsOpen(false)}>
               Contact
             </Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </header>
