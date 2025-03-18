@@ -1,32 +1,50 @@
-/* 📌 Hero Text */
-.hero-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.services {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap; /* Kartların alt alta geçmesini sağlar */
+  width: 100%;
+}
+
+.service-card {
+  width: 48%; /* Kartların her biri genişliğin %48'ini alacak */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
   text-align: center;
-  max-width: 80%;
-  z-index: 1;
-}
-
-.hero-text h1 {
-  font-size: 3rem;
   margin-bottom: 20px;
-  font-weight: bold;
 }
 
-.hero-text p {
+.service-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.service-card h3 {
+  margin: 20px 0 10px;
   font-size: 1.25rem;
-  margin-bottom: 30px;
 }
 
-.hero-text button {
-  padding: 15px 30px;
-  background-color: #ffcc00;
-  border: none;
-  border-radius: 30px;
-  color: #000;
-  font-size: 1.1rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
+.service-card p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #555;
+  margin: 0;
+  padding: 0;
+}
+
+/* Mobilde kartların alt alta sıralanması için */
+@media (max-width: 768px) {
+  .service-card {
+    width: 100%; /* Mobilde kartlar tam genişlikte olacak */
+  }
+}
+
+/* Ekran genişliği artınca 2 kart yan yana olacak */
+@media (min-width: 769px) {
+  .service-card {
+    width: 48%; /* Kartlar geniş ekranlarda yan yana 48% genişliğinde olacak */
+  }
 }
