@@ -1,0 +1,51 @@
+/* 📌 Genel Stil */
+.services {
+    background: linear-gradient(90deg, #0f172a, #1e3a8a); /* Siyah-Mavi Geçişli */
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .services h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+  
+  /* 📌 Hizmet Kartları */
+  .service-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .service-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .service-card:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-5px);
+  }
+  
+  /* 📌 İkon Stili */
+  .icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #ffcc00;
+  }
+  
+  /* 📌 Mobil Uyumluluk */
+  @media (max-width: 768px) {
+    .service-list {
+      grid-template-columns: 1fr;
+    }
+  }
+  

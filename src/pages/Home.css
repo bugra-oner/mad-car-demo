@@ -1,0 +1,73 @@
+/* 📌 Ana Sayfa Genel Stili */
+.home {
+    font-family: Arial, sans-serif;
+    background-color: #0f172a; /* Koyu renk arka plan */
+    color: white;
+  }
+  
+  /* 📌 Hero Section (Tanıtım Videosu) */
+  .hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Videoyu arkaya yerleştiriyoruz */
+  }
+  
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-width: 80%;
+    z-index: 1;
+  }
+  
+  .hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-text p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+  }
+  
+  .hero-text button {
+    padding: 15px 30px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 30px;
+    color: #000;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .hero-text button:hover {
+    background-color: #ff9900;
+    transform: translateY(-5px);
+  }
+  
+  /* 📌 Mobil Uyumluluk */
+  @media (max-width: 768px) {
+    .hero-text h1 {
+      font-size: 2.2rem;
+    }
+    .hero-text p {
+      font-size: 1rem;
+    }
+    .hero-text button {
+      font-size: 1rem;
+    }
+  }
+  
