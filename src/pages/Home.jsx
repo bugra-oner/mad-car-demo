@@ -1,11 +1,9 @@
-import React from "react";
-
-import index from "../components/Header";
+import Header from "../components/Header";
 
 export default function Home() {
   return (
     <div>
-      <index />
+      <Header />
     </div>
   );
 }

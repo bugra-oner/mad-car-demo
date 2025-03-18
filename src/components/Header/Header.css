@@ -1,8 +1,58 @@
+/* 📌 HEADER GENEL STİL */
 .header {
-    background-color: aliceblue;
-    padding: 10px 20;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background: linear-gradient(90deg, rgb(20, 20, 20) 0%, rgb(90, 10, 120) 100%);
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
 }
+
+/* 📌 LOGO STİLİ */
+.logo img {
+    width: 50px;
+    height: auto;
+}
+
+/* 📌 MENÜ STİLİ */
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+/* 📌 HOVER EFEKTİ */
+.nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    /* Hafif şeffaf efekt */
+    color: #ff00ff;
+    /* Neon mor */
+}
+
+/* 📌 MOBİL TASARIM */
+@media (max-width: 768px) {
+    .nav {
+        background: linear-gradient(90deg, rgb(20, 20, 20) 0%, rgb(90, 10, 120) 100%);
+    }
+}
+
+
+/*🔥 Yeni Tasarım
+✅ Gradient efekti ile siyah → mor geçişi var.
+✅ Hover efekti neon mor yapıldı.
+✅ Modern, havalı ve RGB tarzında bir navbar oldu.
+
+🚀 Şimdi kodu dene ve bir bak! Daha farklı bir renk veya animasyon istersen söyle dostum! 😎🔥 */

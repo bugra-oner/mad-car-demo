@@ -1,26 +1,46 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import reactLogo from "../Header/test.svg";
+import "./Header.css"; // Stil dosyamız
 
 export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <div>
-      Header
-      <img src={reactLogo} className="logo react" alt="React logo" />
-      <nav>
+    <header className="header">
+      <div className="logo">
+        <img src={reactLogo} alt="React Logo" />
+      </div>
+
+      {/* Hamburger Menüyü Aç/Kapat */}
+      {/* <button className="menu-toggle" onClick={() => setIsOpen(!isOpen)}>
+        ☰
+      </button> */}
+
+      <nav className={isOpen ? "nav open" : "nav"}>
         <ul>
           <li>
-            <a href="/HomePage">HomePage</a>
+            <Link to="/" onClick={() => setIsOpen(false)}>
+              Home
+            </Link>
           </li>
           <li>
-            <a href="/about">About</a>
+            <Link to="/about" onClick={() => setIsOpen(false)}>
+              About
+            </Link>
           </li>
           <li>
-            <a href="/services">Services</a>
+            <Link to="/services" onClick={() => setIsOpen(false)}>
+              Services
+            </Link>
           </li>
           <li>
-            <a href="/contact">Contact</a>
+            <Link to="/contact" onClick={() => setIsOpen(false)}>
+              Contact
+            </Link>
           </li>
         </ul>
       </nav>
-    </div>
+    </header>
   );
 }
